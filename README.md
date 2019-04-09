@@ -5,6 +5,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false, unique: true|
+|name|string|null: false|
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
