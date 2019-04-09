@@ -14,7 +14,7 @@
 
 
 
-## groupesテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
