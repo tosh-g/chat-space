@@ -1,0 +1,46 @@
+.notification
+  グループを作成しました
+
+.side-bar
+  .side-bar__top
+    ユーザー名
+    =link_to "", class: "side-bar__top-Contents__btn" do
+      = fa_icon 'cog'
+    =link_to "", class: "side-bar__top-Contents__btn" do
+      = fa_icon 'edit'
+
+  .side-bar__bottom
+    .content
+      .room-name チャットルーム1
+      .message メッセージ
+    .content
+      .room-name sample-group
+      .message hello
+    .content
+      .room-name example
+      .message まだメッセージがありません
+.main
+  .main-content
+    .main__top
+      %div チャットルーム名
+      %div Member：ユーザー名
+      .main__top--edit Edit
+    .main__middle
+      .user
+        .user__name ユーザー名
+        .user__timestamp タイムスタンプ
+        .user__comment コメントや画像
+      .user
+        .user__name ユーザー名
+        .user__timestamp タイムスタンプ
+        .user__comment コメントや画像
+    .main__bottom
+      .bottom-in
+        .text-area
+          .text
+            type a message
+            =link_to "", class: "main--bottom-Contents__btn" do
+              = fa_icon 'image'
+            %label
+              %input{:type => "file", :value => "image"}
+        .send-button Send
